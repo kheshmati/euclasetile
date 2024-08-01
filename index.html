@@ -12,7 +12,7 @@
             background-color: #f8f9fa;
             color: #343a40;
         }
-        .header {
+        header {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -21,10 +21,10 @@
             border-bottom: 2px solid #dee2e6;
         }
         .logo {
-            width: 250px; /* Larger logo */
+            width: 250px;
         }
         .container {
-            width: 80%;
+            width: 90%;
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
@@ -33,30 +33,49 @@
             border-radius: 8px;
         }
         .description {
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
         }
-        .language-section {
-            margin-bottom: 30px;
+        .section {
+            margin-bottom: 40px;
         }
-        .language-section h1 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+        .section h2 {
+            font-size: 1.75em;
+            margin-bottom: 15px;
             color: #007bff;
         }
-        .language-section p {
+        .section p {
             margin: 10px 0;
+            line-height: 1.6;
+        }
+        .section img {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
         }
         .contact-info {
             margin-top: 20px;
             font-size: 1.1em;
         }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #dee2e6;
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
-    <header class="header">
+    <header>
         <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
     </header>
     
@@ -65,17 +84,47 @@
             Import and Supply of Tiles
         </div>
 
-        <div class="language-section" id="english">
-            <h1>Contact Information</h1>
-            <p>Email: sales@euclasetile.com</p>
-            <p>Phone: (613) 927-6815</p>
-        </div>
+        <section class="section" id="quality">
+            <h2>Our Quality Promise</h2>
+            <img src="quality-graphic.png" alt="Quality Graphic">
+            <p>At Euclase Tile, we are committed to providing the highest quality tiles that meet rigorous standards. Our products are sourced from trusted manufacturers, ensuring durability and style that exceed expectations.</p>
+        </section>
 
-        <div class="language-section" id="french">
-            <h1>Informations de Contact</h1>
-            <p>Email: sales@euclasetile.com</p>
-            <p>Téléphone: (613) 927-6815</p>
+        <section class="section" id="responsibility">
+            <h2>Our Responsibility</h2>
+            <img src="responsibility-graphic.png" alt="Responsibility Graphic">
+            <p>We believe in sustainable practices and ethical sourcing. Our tiles are manufactured with minimal environmental impact, and we ensure that all our suppliers adhere to fair labor practices.</p>
+        </section>
+
+        <section class="section" id="delivery">
+            <h2>Delivery Times</h2>
+            <img src="delivery-graphic.png" alt="Delivery Graphic">
+            <p>We offer prompt delivery services to ensure that your tiles arrive on time. Standard delivery times are between 5-7 business days, with expedited options available for urgent needs.</p>
+        </section>
+
+        <section class="section" id="support">
+            <h2>Customer Support</h2>
+            <img src="support-graphic.png" alt="Support Graphic">
+            <p>Our dedicated customer support team is here to assist you with any inquiries or issues. We offer support via phone, email, and live chat to ensure that your experience with us is smooth and satisfactory.</p>
+        </section>
+
+        <div class="contact-info">
+            <div class="language-section" id="english">
+                <h1>Contact Information</h1>
+                <p>Email: sales@euclasetile.com</p>
+                <p>Phone: (613) 927-6815</p>
+            </div>
+
+            <div class="language-section" id="french">
+                <h1>Informations de Contact</h1>
+                <p>Email: sales@euclasetile.com</p>
+                <p>Téléphone: (613) 927-6815</p>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Euclase Tile. All rights reserved.</p>
+    </footer>
 </body>
 </html>
