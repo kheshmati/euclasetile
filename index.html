@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euclase Tile</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2ed;
-            color: #2C5161;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
         .header {
-            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             padding: 20px;
-            box-sizing: border-box;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
+            background-color: #ffffff;
+            border-bottom: 2px solid #dee2e6;
         }
         .logo {
-            width: 300px;
-            margin: 0 20px;
+            width: 250px; /* Larger logo */
         }
-        .content {
-            margin-top: 20px;
-            max-width: 800px;
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .description {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
         }
         .language-section {
-            margin-top: 30px;
-            text-align: left;
+            margin-bottom: 30px;
         }
         .language-section h1 {
             font-size: 1.5em;
             margin-bottom: 10px;
+            color: #007bff;
         }
         .language-section p {
             margin: 10px 0;
         }
-        .description {
-            font-size: 1.2em;
+        .contact-info {
             margin-top: 20px;
-            font-weight: bold;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
-    </div>
-
-    <div class="content">
+    </header>
+    
+    <div class="container">
         <div class="description">
             Import and Supply of Tiles
         </div>
