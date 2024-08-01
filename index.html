@@ -16,6 +16,7 @@
         header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 20px;
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
@@ -32,6 +33,21 @@
             font-weight: bold;
             font-family: 'DyeLine', sans-serif; /* Change font to DyeLine */
             font-style: italic; /* Italic style */
+        }
+
+        .download-button {
+            background-color: #2C5161;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .download-button:hover {
+            background-color: #1a3b49;
         }
 
         .container {
@@ -93,9 +109,13 @@
 </head>
 <body>
     <header>
-        <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
-        <div class="header-text">
-            Import and Supply of Tiles
+        <div>
+            <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
+            <div class="header-text">Import and Supply of Tiles</div>
+        </div>
+        <div>
+            <a href="catalog1.pdf" class="download-button" download>Download Catalog 1</a>
+            <a href="catalog2.pdf" class="download-button" download>Download Catalog 2</a>
         </div>
     </header>
     
