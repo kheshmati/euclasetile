@@ -40,6 +40,9 @@
         }
         .section {
             margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
         .section h2 {
             font-size: 1.75em;
@@ -51,8 +54,9 @@
             line-height: 1.6;
         }
         .section img {
-            width: 100%;
-            max-width: 600px;
+            width: 200px; /* Fixed width for images */
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures images cover the area without distortion */
             margin: 20px 0;
         }
         .contact-info {
@@ -62,14 +66,14 @@
         .contact-info p {
             margin: 10px 0;
         }
-        .footer {
+        footer {
             background-color: #ffffff;
             text-align: center;
             padding: 20px;
             border-top: 2px solid #dee2e6;
             margin-top: 40px;
         }
-        .footer p {
+        footer p {
             margin: 0;
         }
     </style>
@@ -98,7 +102,7 @@
 
         <section class="section" id="delivery">
             <h2>Delivery Times</h2>
-            <img src="delivery.png" alt="Delivery Graphic">
+            <img src="Delivery.png" alt="Delivery Graphic">
             <p>We offer prompt delivery services to ensure that your tiles arrive on time. Standard delivery times are between 5-7 business days, with expedited options available for urgent needs.</p>
         </section>
 
@@ -123,7 +127,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer>
         <p>&copy; 2024 Euclase Tile. All rights reserved.</p>
     </footer>
 </body>
