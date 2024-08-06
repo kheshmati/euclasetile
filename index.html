@@ -15,6 +15,7 @@
         }
         header {
             display: flex;
+            flex-wrap: wrap; /* Allow wrapping of elements */
             align-items: center;
             justify-content: space-between;
             padding: 20px;
@@ -34,6 +35,13 @@
             font-family: 'DyeLine', sans-serif; /* Change font to DyeLine */
             font-style: italic; /* Italic style */
             white-space: nowrap; /* Prevent text from wrapping */
+            flex: 1; /* Allow the header text to take available space */
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of buttons */
+            gap: 10px; /* Space between buttons */
         }
 
         .download-button {
@@ -69,6 +77,7 @@
         .section {
             margin-bottom: 40px;
             display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
         }
         .section img {
@@ -106,6 +115,36 @@
         footer p {
             margin: 0;
         }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .header-text {
+                font-size: 2em; /* Adjust font size for smaller screens */
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .logo {
+                width: 200px; /* Adjust logo size for smaller screens */
+                margin: 0 auto;
+            }
+
+            .download-buttons {
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-text {
+                font-size: 1.5em; /* Adjust font size for very small screens */
+            }
+
+            .logo {
+                width: 150px; /* Adjust logo size for very small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -114,7 +153,7 @@
             <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
             <div class="header-text">Import and Supply of Tiles</div>
         </div>
-        <div>
+        <div class="download-buttons">
             <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
             <a href="Catalog2.pdf" class="download-button" download>Download Catalog 2</a>
         </div>
