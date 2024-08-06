@@ -24,23 +24,25 @@
         }
 
         .logo {
+            max-width: 100%;
+            height: auto;
             width: 200px;
-            margin-right: 20px; /* Space between logo and text */
+            margin-right: 20px;
         }
 
         .header-text {
-            font-size: 2em; /* Adjusted font size */
-            color: #2C5161; /* Header text color */
-            font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
-            font-weight: 700; /* Bold */
-            white-space: nowrap; /* Prevent text from wrapping */
-            flex: 1; /* Allow the header text to take available space */
+            font-size: 2em;
+            color: #2C5161;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            white-space: nowrap;
+            flex: 1;
         }
 
         .download-buttons {
             display: flex;
-            flex-wrap: wrap; /* Allow wrapping of buttons */
-            gap: 10px; /* Space between buttons */
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .download-button {
@@ -83,22 +85,21 @@
         }
 
         .section img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+            max-width: 100%;
+            height: auto;
             margin-right: 20px;
         }
 
         .section-content {
-            max-width: calc(100% - 220px); /* Adjusted for image width and margin */
+            max-width: calc(100% - 220px);
         }
 
         .section h2 {
             font-size: 1.75em;
             margin-bottom: 15px;
-            color: #2C5161; /* Changed color */
-            font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
-            font-weight: 600; /* Semi-bold */
+            color: #2C5161;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
         }
 
         .section p {
@@ -135,9 +136,8 @@
         }
 
         .image-text-section img {
-            width: 600px;
-            height: 400px;
-            object-fit: cover;
+            max-width: 100%;
+            height: auto;
         }
 
         .image-text-section:nth-child(odd) {
@@ -162,13 +162,13 @@
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .header-text {
-                font-size: 1.75em; /* Adjust font size for smaller screens */
+                font-size: 1.75em;
                 text-align: center;
                 margin-top: 10px;
             }
 
             .logo {
-                width: 150px; /* Adjust logo size for smaller screens */
+                width: 150px;
                 margin: 0 auto;
             }
 
@@ -197,11 +197,11 @@
 
         @media (max-width: 480px) {
             .header-text {
-                font-size: 1.5em; /* Adjust font size for very small screens */
+                font-size: 1.5em;
             }
 
             .logo {
-                width: 100px; /* Adjust logo size for very small screens */
+                width: 100px;
             }
         }
     </style>
