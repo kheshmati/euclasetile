@@ -15,19 +15,20 @@
         }
         header {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             padding: 20px;
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
-            position: relative;
         }
 
         .logo {
             max-width: 100%;
             height: auto;
             width: 200px;
-            position: absolute;
+            margin-right: 20px;
+            position: absolute; /* Ensure the logo remains in the left corner */
             left: 20px;
             top: 20px;
         }
@@ -37,8 +38,9 @@
             color: #2C5161;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
+            white-space: nowrap;
             text-align: center;
-            margin: 10px 0;
+            margin-top: 70px; /* Space below the logo */
         }
 
         .company-name {
@@ -47,11 +49,11 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 10px;
         }
 
         .download-buttons, .contact-tab {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
             margin-top: 10px;
@@ -94,41 +96,35 @@
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
-            padding: 10px;
         }
 
         .section img {
             max-width: 100%;
             height: auto;
-            margin: 0 auto;
-            border-radius: 8px;
+            margin-right: 20px;
         }
 
         .section-content {
-            max-width: 100%;
-            padding: 10px;
+            max-width: calc(100% - 220px);
         }
 
         .section h2 {
-            font-size: 1.5em;
+            font-size: 1.75em;
             margin-bottom: 15px;
             color: #2C5161;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            text-align: center;
         }
 
         .section p {
             margin: 10px 0;
             line-height: 1.6;
             font-size: 1em;
-            text-align: center;
         }
 
         .contact-info {
             margin-top: 20px;
             font-size: 1.1em;
-            text-align: center;
         }
 
         .contact-info p {
@@ -149,52 +145,46 @@
 
         .image-text-section {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin: 20px 0;
             flex-wrap: wrap;
+            flex-direction: row;
         }
 
         .image-text-section img {
             max-width: 100%;
             height: auto;
-            flex: 1;
+            flex: 0 0 auto;
+            margin-right: 20px;
+            border-radius: 8px;
         }
 
         .image-text-content {
             flex: 1;
             padding: 20px;
-        }
-
-        .image-text-section:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-
-        .image-text-section:nth-child(even) {
-            flex-direction: row;
-        }
-
-        .image-text-content p {
-            font-family: 'Lato', sans-serif;
-            font-size: 1em;
-            line-height: 1.6;
+            text-align: left;
         }
 
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .header-text {
                 font-size: 1.75em;
-                text-align: center;
                 margin-top: 10px;
+            }
+
+            .company-name {
+                font-size: 1.75em;
             }
 
             .logo {
                 width: 150px;
-                margin: 0 auto;
+                left: 20px;
+                top: 20px;
             }
 
             .download-buttons, .contact-tab {
-                justify-content: center;
                 width: 100%;
+                justify-content: center;
                 margin-top: 10px;
             }
 
@@ -204,7 +194,6 @@
 
             .image-text-section img {
                 width: 100%;
-                height: auto;
                 margin-bottom: 20px;
             }
 
@@ -213,14 +202,6 @@
                 padding: 0;
                 text-align: center;
             }
-
-            .section h2 {
-                font-size: 1.25em;
-            }
-
-            .section p {
-                font-size: 0.9em;
-            }
         }
 
         @media (max-width: 480px) {
@@ -228,20 +209,20 @@
                 font-size: 1.5em;
             }
 
-            .logo {
-                width: 100px;
-            }
-
             .company-name {
                 font-size: 1.5em;
             }
 
-            .section h2 {
-                font-size: 1.1em;
+            .logo {
+                width: 100px;
             }
 
-            .section p {
-                font-size: 0.85em;
+            .image-text-section img {
+                margin-bottom: 15px;
+            }
+
+            .image-text-content {
+                padding: 10px;
             }
         }
     </style>
@@ -249,9 +230,9 @@
 <body>
     <header>
         <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
-        <div class="company-name">EUCLASE TILE</div>
-        <div class="header-text">Your Trusted Source for Premium Tiles</div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="flex: 1;">
+            <div class="company-name">EUCLASE TILE</div>
+            <div class="header-text">Your Trusted Source for Premium Tiles</div>
             <div class="download-buttons">
                 <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
                 <a href="Catalog2.pdf" class="download-button" download>Download Catalog 2</a>
