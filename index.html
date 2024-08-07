@@ -20,13 +20,16 @@
             padding: 20px;
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
+            position: relative;
         }
 
         .logo {
             max-width: 100%;
             height: auto;
             width: 200px;
-            margin-bottom: 20px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
         }
 
         .header-text {
@@ -223,10 +226,10 @@
 </head>
 <body>
     <header>
+        <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
         <div class="company-name">EUCLASE TILE</div>
         <div class="header-text">Your Trusted Source for Premium Tiles</div>
         <div style="display: flex; flex-direction: column; align-items: center;">
-            <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
             <div class="download-buttons">
                 <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
                 <a href="Catalog2.pdf" class="download-button" download>Download Catalog 2</a>
