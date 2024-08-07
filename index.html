@@ -15,9 +15,8 @@
         }
         header {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
             padding: 20px;
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
@@ -27,7 +26,7 @@
             max-width: 100%;
             height: auto;
             width: 200px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .header-text {
@@ -35,8 +34,8 @@
             color: #2C5161;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            white-space: nowrap;
-            flex: 1;
+            text-align: center;
+            margin: 10px 0;
         }
 
         .company-name {
@@ -44,13 +43,15 @@
             color: #2C5161;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            margin-left: 20px;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .download-buttons, .contact-tab {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 10px;
+            margin-top: 10px;
         }
 
         .download-button, .contact-tab a {
@@ -222,17 +223,17 @@
 </head>
 <body>
     <header>
-        <div style="display: flex; align-items: center;">
+        <div class="company-name">EUCLASE TILE</div>
+        <div class="header-text">Your Trusted Source for Premium Tiles</div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
             <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
-            <div class="header-text">Your Trusted Source for Premium Tiles</div>
-            <div class="company-name">EUCLASE TILE</div>
-        </div>
-        <div class="download-buttons">
-            <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
-            <a href="Catalog2.pdf" class="download-button" download>Download Catalog 2</a>
-        </div>
-        <div class="contact-tab">
-            <a href="#contact">Contact Us</a>
+            <div class="download-buttons">
+                <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
+                <a href="Catalog2.pdf" class="download-button" download>Download Catalog 2</a>
+            </div>
+            <div class="contact-tab">
+                <a href="#contact">Contact Us</a>
+            </div>
         </div>
     </header>
 
