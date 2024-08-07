@@ -39,6 +39,14 @@
             flex: 1;
         }
 
+        .company-name {
+            font-size: 2em;
+            color: #2C5161;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
         .download-buttons, .contact-tab {
             display: flex;
             flex-wrap: wrap;
@@ -137,25 +145,22 @@
         }
 
         .image-text-section img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
-            flex: 1 1 50%;
-            margin-right: 20px;
+            flex: 1;
         }
 
         .image-text-content {
-            flex: 1 1 50%;
+            flex: 1;
             padding: 20px;
         }
 
-        .image-text-section:nth-child(odd) .image-text-content {
-            order: 1;
-            text-align: right;
+        .image-text-section:nth-child(odd) {
+            flex-direction: row-reverse;
         }
 
-        .image-text-section:nth-child(even) .image-text-content {
-            order: 2;
-            text-align: left;
+        .image-text-section:nth-child(even) {
+            flex-direction: row;
         }
 
         .image-text-content p {
@@ -208,6 +213,10 @@
             .logo {
                 width: 100px;
             }
+
+            .company-name {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -216,6 +225,7 @@
         <div style="display: flex; align-items: center;">
             <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
             <div class="header-text">Your Trusted Source for Premium Tiles</div>
+            <div class="company-name">EUCLASE TILE</div>
         </div>
         <div class="download-buttons">
             <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
@@ -281,36 +291,34 @@
         </section>
 
         <section class="section" id="delivery">
-            <img src="Delivery.png" alt="Delivery Graphic">
+            <img src="delivery.png" alt="Delivery Graphic">
             <div class="section-content">
-                <h2>Fast and Reliable Delivery</h2>
-                <p>We offer prompt and reliable delivery services to ensure that your projects stay on schedule. Our logistics team works efficiently to get your tiles to you as quickly as possible.</p>
-                <h2>Livraison Rapide et Fiable</h2>
-                <p>Nous offrons des services de livraison rapides et fiables pour garantir que vos projets respectent les délais. Notre équipe logistique travaille efficacement pour vous fournir vos carreaux dans les plus brefs délais.</p>
+                <h2>Timely Delivery</h2>
+                <p>We understand the importance of timely delivery in your projects. Our efficient logistics network ensures that your orders arrive on time, every time.</p>
+                <h2>Livraison en Temps Opportun</h2>
+                <p>Nous comprenons l'importance de la livraison en temps opportun pour vos projets. Notre réseau logistique efficace garantit que vos commandes arrivent à temps, à chaque fois.</p>
             </div>
         </section>
 
         <section class="section" id="support">
-            <img src="customer_support.png" alt="Support Graphic">
+            <img src="support.png" alt="Support Graphic">
             <div class="section-content">
-                <h2>Exceptional Customer Support</h2>
-                <p>Our dedicated support team is here to assist you with any questions or concerns. We provide exceptional service to ensure that your experience with us is smooth and satisfactory.</p>
-                <h2>Service Client Exceptionnel</h2>
-                <p>Notre équipe de soutien dédiée est là pour vous aider avec toutes vos questions ou préoccupations. Nous offrons un service exceptionnel pour garantir que votre expérience avec nous soit fluide et satisfaisante.</p>
+                <h2>Customer Support</h2>
+                <p>Our dedicated customer support team is here to assist you with any questions or concerns you may have. We are committed to providing excellent service at every step.</p>
+                <h2>Support Client</h2>
+                <p>Notre équipe de support client dédiée est là pour vous aider avec toutes les questions ou préoccupations que vous pourriez avoir. Nous nous engageons à fournir un service excellent à chaque étape.</p>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Phone: 613-927-6815</p>
+                <p>Email: sales@euclasetile.com</p>
             </div>
         </section>
     </div>
 
-    <div class="container" id="contact">
-        <section class="section">
-            <h2>Contact Us</h2>
-            <div class="contact-info" style="margin-top: 20px;">
-                <p>Phone: 613-927-6815</p>
-                <p>Email: <a href="mailto:sales@euclsetile.com">sales@euclsetile.com</a></p>
-            </div>
-        </section>
-    </div>
-    
     <footer>
         <p>&copy; 2024 Euclase Tile. All rights reserved.</p>
     </footer>
