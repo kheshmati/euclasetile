@@ -39,13 +39,13 @@
             flex: 1;
         }
 
-        .download-buttons {
+        .download-buttons, .contact-tab {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
 
-        .download-button {
+        .download-button, .contact-tab a {
             background-color: #2C5161;
             color: white;
             padding: 10px 20px;
@@ -56,7 +56,7 @@
             font-size: 1em;
         }
 
-        .download-button:hover {
+        .download-button:hover, .contact-tab a:hover {
             background-color: #1a3b49;
         }
 
@@ -133,24 +133,26 @@
             display: flex;
             align-items: center;
             margin: 20px 0;
+            flex-wrap: wrap;
         }
 
         .image-text-section img {
             max-width: 100%;
             height: auto;
-        }
-
-        .image-text-section:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-
-        .image-text-section:nth-child(even) {
-            flex-direction: row;
+            flex: 1 1 50%;
         }
 
         .image-text-content {
-            max-width: 50%;
-            padding: 0 20px;
+            flex: 1 1 50%;
+            padding: 20px;
+        }
+
+        .image-text-section:nth-child(odd) .image-text-content {
+            order: 1;
+        }
+
+        .image-text-section:nth-child(even) .image-text-content {
+            order: 2;
         }
 
         .image-text-content p {
@@ -172,7 +174,7 @@
                 margin: 0 auto;
             }
 
-            .download-buttons {
+            .download-buttons, .contact-tab {
                 justify-content: center;
                 width: 100%;
                 margin-top: 10px;
@@ -215,6 +217,9 @@
         <div class="download-buttons">
             <a href="Catalog1.pdf" class="download-button" download>Download Catalog 1</a>
             <a href="Catalog2.pdf" class="download-button" download>Download Catalog 2</a>
+        </div>
+        <div class="contact-tab">
+            <a href="#contact">Contact Us</a>
         </div>
     </header>
 
@@ -289,6 +294,16 @@
                 <p>Our dedicated support team is here to assist you with any questions or concerns. We provide exceptional service to ensure that your experience with us is smooth and satisfactory.</p>
                 <h2>Service Client Exceptionnel</h2>
                 <p>Notre équipe de soutien dédiée est là pour vous aider avec toutes vos questions ou préoccupations. Nous offrons un service exceptionnel pour garantir que votre expérience avec nous soit fluide et satisfaisante.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="container" id="contact">
+        <section class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Phone: 613-927-6815</p>
+                <p>Email: <a href="mailto:sales@euclsetile.com">sales@euclsetile.com</a></p>
             </div>
         </section>
     </div>
