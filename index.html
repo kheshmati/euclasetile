@@ -101,14 +101,11 @@
             max-width: 100%;
             height: auto;
             margin-right: 20px;
-            flex: 0 0 200px; /* Fixed width for images */
-            border-radius: 8px;
+            flex: 1 1 auto; /* Allow images to resize properly */
         }
 
         .section-content {
-            flex: 1;
-            padding: 20px;
-            text-align: left;
+            flex: 2 1 auto; /* Allow text to take more space */
         }
 
         .section h2 {
@@ -146,15 +143,39 @@
             margin: 0;
         }
 
+        .image-text-section {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .image-text-section img {
+            max-width: 100%;
+            height: auto;
+            flex: 0 0 auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .image-text-content {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .header-text {
                 font-size: 1.75em;
                 margin-top: 10px;
+                white-space: normal;
             }
 
             .company-name {
                 font-size: 1.75em;
+                margin-top: 100px; /* Adjusted margin to make space for the logo */
             }
 
             .logo {
@@ -169,17 +190,18 @@
                 margin-top: 10px;
             }
 
-            .section {
+            .image-text-section {
                 flex-direction: column;
             }
 
-            .section img {
+            .image-text-section img {
                 width: 100%;
-                height: auto;
                 margin-bottom: 20px;
             }
 
-            .section-content {
+            .image-text-content {
+                max-width: 100%;
+                padding: 0;
                 text-align: center;
             }
         }
@@ -187,21 +209,30 @@
         @media (max-width: 480px) {
             .header-text {
                 font-size: 1.5em;
+                margin: 10px 0;
+                white-space: normal;
             }
 
             .company-name {
                 font-size: 1.5em;
+                margin-top: 120px; /* Further adjusted for smaller screens */
             }
 
             .logo {
                 width: 100px;
+                top: 10px; /* Adjusted top margin for smaller logo */
             }
 
-            .section img {
+            .download-buttons, .contact-tab {
+                margin-top: 20px; /* Ensures buttons are spaced correctly */
+                padding: 0 10px; /* Adds padding to prevent overflow */
+            }
+
+            .image-text-section img {
                 margin-bottom: 15px;
             }
 
-            .section-content {
+            .image-text-content {
                 padding: 10px;
             }
         }
@@ -224,13 +255,46 @@
     </header>
 
     <div class="container">
+        <section class="image-text-section">
+            <img src="pic1.png" alt="Picture 1">
+            <div class="image-text-content">
+                <p>Exquisite craftsmanship meets timeless design</p>
+            </div>
+        </section>
+        <section class="image-text-section">
+            <img src="pic2.png" alt="Picture 2">
+            <div class="image-text-content">
+                <p>Sophistication and enduring style elevate any space.</p>
+            </div>
+        </section>
+        <section class="image-text-section">
+            <img src="pic3.png" alt="Picture 3">
+            <div class="image-text-content">
+                <p>Elegance and modern innovation seamlessly transform environments.</p>
+            </div>
+        </section>
+        <section class="image-text-section">
+            <img src="pic4.png" alt="Picture 4">
+            <div class="image-text-content">
+                <p>Luxury is embodied in every meticulously crafted detail.</p>
+            </div>
+        </section>
+        <section class="image-text-section">
+            <img src="pic5.png" alt="Picture 5">
+            <div class="image-text-content">
+                <p>Refinement and high-quality design create an unmatched experience.</p>
+            </div>
+        </section>
+    </div>
+    
+    <div class="container">
         <section class="section" id="quality">
             <img src="quality.png" alt="Quality Graphic">
             <div class="section-content">
                 <h2>Our Quality Promise</h2>
                 <p>At Euclase Tile, we are committed to providing the highest quality tiles that meet rigorous standards. Our products are sourced from trusted manufacturers, ensuring durability and style that exceed expectations.</p>
                 <h2>Notre Promesse de Qualité</h2>
-                <p>Chez Euclase Tile, nous nous engageons à fournir des carreaux de la plus haute qualité qui répondent à des normes rigoureuses. Nos produits proviennent de fabricants de confiance, garantissant durabilité et style qui dépassent les attentes.</p>
+                <p>Chez Euclase Tile, nous nous engageons à fournir des carreaux de la plus haute qualité qui répondent à des normes rigoureuses. Nos produits proviennent de fabricants de confiance, garantissant une durabilité et un style qui dépassent les attentes.</p>
             </div>
         </section>
 
@@ -274,4 +338,7 @@
     </div>
 
     <footer>
-        <p
+        <p>&copy; 2024 Euclase Tile. All rights reserved.</p>
+    </footer>
+</body>
+</html>
