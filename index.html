@@ -95,17 +95,17 @@
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 40px;
+            align-items: center;
         }
 
         .section img {
-            max-width: 100%;
+            max-width: 150px; /* Set a specific max-width for images */
             height: auto;
             margin-right: 20px;
-            flex: 1 1 auto; /* Allow images to resize properly */
         }
 
         .section-content {
-            flex: 2 1 auto; /* Allow text to take more space */
+            flex: 1;
         }
 
         .section h2 {
@@ -170,12 +170,10 @@
             .header-text {
                 font-size: 1.75em;
                 margin-top: 10px;
-                white-space: normal;
             }
 
             .company-name {
                 font-size: 1.75em;
-                margin-top: 100px; /* Adjusted margin to make space for the logo */
             }
 
             .logo {
@@ -188,6 +186,19 @@
                 width: 100%;
                 justify-content: center;
                 margin-top: 10px;
+            }
+
+            .section img {
+                max-width: 100px; /* Smaller images on smaller screens */
+                margin-right: 10px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .section p {
+                font-size: 0.9em;
             }
 
             .image-text-section {
@@ -209,23 +220,27 @@
         @media (max-width: 480px) {
             .header-text {
                 font-size: 1.5em;
-                margin: 10px 0;
-                white-space: normal;
             }
 
             .company-name {
                 font-size: 1.5em;
-                margin-top: 120px; /* Further adjusted for smaller screens */
             }
 
             .logo {
                 width: 100px;
-                top: 10px; /* Adjusted top margin for smaller logo */
             }
 
-            .download-buttons, .contact-tab {
-                margin-top: 20px; /* Ensures buttons are spaced correctly */
-                padding: 0 10px; /* Adds padding to prevent overflow */
+            .section img {
+                max-width: 80px; /* Further smaller images on smallest screens */
+                margin-right: 5px;
+            }
+
+            .section h2 {
+                font-size: 1.25em;
+            }
+
+            .section p {
+                font-size: 0.8em;
             }
 
             .image-text-section img {
@@ -294,7 +309,7 @@
                 <h2>Our Quality Promise</h2>
                 <p>At Euclase Tile, we are committed to providing the highest quality tiles that meet rigorous standards. Our products are sourced from trusted manufacturers, ensuring durability and style that exceed expectations.</p>
                 <h2>Notre Promesse de Qualité</h2>
-                <p>Chez Euclase Tile, nous nous engageons à fournir des carreaux de la plus haute qualité qui répondent à des normes rigoureuses. Nos produits proviennent de fabricants de confiance, garantissant une durabilité et un style qui dépassent les attentes.</p>
+                <p>Chez Euclase Tile, nous nous engageons à fournir des carreaux de la plus haute qualité qui répondent à des normes rigoureuses. Nos produits proviennent de fabricants de confiance, garantissant durabilité et style qui dépassent les attentes.</p>
             </div>
         </section>
 
