@@ -16,22 +16,34 @@
         header {
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: space-between;
             padding: 20px;
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
-            position: relative; /* Added to ensure positioning context for logo */
+            position: relative;
+            overflow: hidden; /* Ensure contents stay within header bounds */
         }
 
         .logo {
             max-width: 100%;
             height: auto;
             width: 200px;
-            margin-right: 20px;
+            margin: 0;
             position: absolute;
-            left: 20px;
-            top: 20px;
+            top: 10px;
+            left: 10px;
+        }
+
+        .header-content {
+            flex: 1;
+            margin-left: 220px; /* Ensure space for logo */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+            padding: 10px;
         }
 
         .header-text {
@@ -39,17 +51,15 @@
             color: #2C5161;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            white-space: nowrap;
-            text-align: center;
-            margin-top: 70px; /* Space below the logo */
+            margin: 0;
         }
 
         .company-name {
-            font-size: 2em;
+            font-size: 2.5em;
             color: #2C5161;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            text-align: center;
+            margin: 0;
         }
 
         .download-buttons, .contact-tab {
@@ -100,7 +110,7 @@
         }
 
         .section img {
-            max-width: 150px; /* Set a specific max-width for images */
+            max-width: 150px;
             height: auto;
             margin-right: 20px;
         }
@@ -168,19 +178,22 @@
 
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
+            .logo {
+                width: 150px;
+                left: 10px;
+                top: 10px;
+            }
+
+            .header-content {
+                margin-left: 170px; /* Adjust margin to fit resized logo */
+            }
+
             .header-text {
                 font-size: 1.75em;
-                margin-top: 10px;
             }
 
             .company-name {
-                font-size: 1.75em;
-            }
-
-            .logo {
-                width: 150px;
-                left: 10px; /* Adjusted to avoid overlap */
-                top: 10px; /* Adjusted to avoid overlap */
+                font-size: 2em;
             }
 
             .download-buttons, .contact-tab {
@@ -190,7 +203,7 @@
             }
 
             .section img {
-                max-width: 100px; /* Smaller images on smaller screens */
+                max-width: 100px;
                 margin-right: 10px;
             }
 
@@ -219,20 +232,24 @@
         }
 
         @media (max-width: 480px) {
+            .logo {
+                width: 100px;
+            }
+
+            .header-content {
+                margin-left: 120px; /* Further adjust margin for very small screens */
+            }
+
             .header-text {
                 font-size: 1.5em;
             }
 
             .company-name {
-                font-size: 1.5em;
-            }
-
-            .logo {
-                width: 100px;
+                font-size: 1.75em;
             }
 
             .section img {
-                max-width: 80px; /* Further smaller images on smallest screens */
+                max-width: 80px;
                 margin-right: 5px;
             }
 
@@ -257,7 +274,7 @@
 <body>
     <header>
         <img src="EUCLASE_LOGO.png" alt="Euclase Logo" class="logo">
-        <div style="flex: 1;">
+        <div class="header-content">
             <div class="company-name">EUCLASE TILE</div>
             <div class="header-text">Your Trusted Source for Premium Tiles</div>
             <div class="download-buttons">
@@ -308,7 +325,7 @@
             <img src="quality.png" alt="Quality Graphic">
             <div class="section-content">
                 <h2>Our Quality Promise</h2>
-                <p>At Euclase Tile, we are committed to providing the highest quality tiles that meet rigorous standards. Our products are sourced from trusted manufacturers, ensuring durability and style that exceed expectations.</p>
+                <p>At Euclase Tile, we are committed to providing tiles of the highest quality that meet stringent standards. Our products come from trusted manufacturers, ensuring durability and style that exceed expectations.</p>
                 <h2>Notre Promesse de Qualité</h2>
                 <p>Chez Euclase Tile, nous nous engageons à fournir des carreaux de la plus haute qualité qui répondent à des normes rigoureuses. Nos produits proviennent de fabricants de confiance, garantissant durabilité et style qui dépassent les attentes.</p>
             </div>
