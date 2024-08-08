@@ -21,6 +21,7 @@
             padding: 20px;
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
+            position: relative; /* Added to ensure positioning context for logo */
         }
 
         .logo {
@@ -28,7 +29,7 @@
             height: auto;
             width: 200px;
             margin-right: 20px;
-            position: absolute; /* Ensure the logo remains in the left corner */
+            position: absolute;
             left: 20px;
             top: 20px;
         }
@@ -178,8 +179,8 @@
 
             .logo {
                 width: 150px;
-                left: 20px;
-                top: 20px;
+                left: 10px; /* Adjusted to avoid overlap */
+                top: 10px; /* Adjusted to avoid overlap */
             }
 
             .download-buttons, .contact-tab {
