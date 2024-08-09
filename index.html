@@ -22,7 +22,7 @@
             background-color: #ffffff;
             border-bottom: 2px solid #dee2e6;
             position: relative;
-            overflow: hidden; /* Ensure contents stay within header bounds */
+            overflow: hidden;
         }
 
         .logo {
@@ -37,7 +37,7 @@
 
         .header-content {
             flex: 1;
-            margin-left: 220px; /* Ensure space for logo */
+            margin-left: 220px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -176,6 +176,15 @@
             text-align: left;
         }
 
+        /* Alternate alignment for image-text sections */
+        .image-text-section:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .image-text-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .logo {
@@ -185,7 +194,7 @@
             }
 
             .header-content {
-                margin-left: 170px; /* Adjust margin to fit resized logo */
+                margin-left: 170px;
             }
 
             .header-text {
@@ -237,7 +246,7 @@
             }
 
             .header-content {
-                margin-left: 120px; /* Further adjust margin for very small screens */
+                margin-left: 120px;
             }
 
             .header-text {
@@ -325,47 +334,28 @@
             <img src="quality.png" alt="Quality Graphic">
             <div class="section-content">
                 <h2>Our Quality Promise</h2>
-                <p>At Euclase Tile, we are committed to providing tiles of the highest quality that meet stringent standards. Our products come from trusted manufacturers, ensuring durability and style that exceed expectations.</p>
-                <h2>Notre Promesse de Qualité</h2>
-                <p>Chez Euclase Tile, nous nous engageons à fournir des carreaux de la plus haute qualité qui répondent à des normes rigoureuses. Nos produits proviennent de fabricants de confiance, garantissant durabilité et style qui dépassent les attentes.</p>
+                <p>At Euclase Tile, we are committed to providing only the highest quality tiles that meet the most rigorous standards. Our tiles are crafted with precision and care to ensure durability and aesthetic appeal.</p>
             </div>
         </section>
-
         <section class="section" id="responsibility">
             <img src="responsibility.png" alt="Responsibility Graphic">
             <div class="section-content">
                 <h2>Our Responsibility</h2>
-                <p>We believe in sustainable practices and ethical sourcing. Our tiles are manufactured with minimal environmental impact, and we ensure that all our suppliers adhere to fair labor practices.</p>
-                <h2>Notre Responsabilité</h2>
-                <p>Nous croyons en des pratiques durables et en un approvisionnement éthique. Nos carreaux sont fabriqués avec un impact environnemental minimal, et nous veillons à ce que tous nos fournisseurs respectent des pratiques de travail équitables.</p>
+                <p>We take pride in our ethical sourcing and environmentally friendly practices. Euclase Tile is dedicated to minimizing our environmental impact and ensuring that all our products are responsibly sourced.</p>
             </div>
         </section>
-
         <section class="section" id="delivery">
-            <img src="Delivery.png" alt="Delivery Graphic">
+            <img src="delivery.png" alt="Delivery Graphic">
             <div class="section-content">
-                <h2>Timely Delivery</h2>
-                <p>We understand the importance of timely delivery in your projects. Our efficient logistics network ensures that your orders arrive on time, every time.</p>
-                <h2>Livraison en Temps Opportun</h2>
-                <p>Nous comprenons l'importance de la livraison en temps opportun pour vos projets. Notre réseau logistique efficace garantit que vos commandes arrivent à temps, à chaque fois.</p>
+                <h2>Our Delivery</h2>
+                <p>Timely delivery is a key aspect of our service. We understand the importance of meeting deadlines, and our logistics team works diligently to ensure that your orders arrive on time, every time.</p>
             </div>
         </section>
-
-        <section class="section" id="support">
-            <img src="customer_support.png" alt="Customer Support Graphic">
+        <section class="section" id="customersupport">
+            <img src="customersupport.png" alt="Customer Support Graphic">
             <div class="section-content">
                 <h2>Customer Support</h2>
-                <p>Our dedicated customer support team is here to assist you with any questions or concerns you may have. We are committed to providing excellent service at every step.</p>
-                <h2>Support Client</h2>
-                <p>Notre équipe de support client dédiée est là pour vous aider avec toutes les questions ou préoccupations que vous pourriez avoir. Nous nous engageons à fournir un service excellent à chaque étape.</p>
-            </div>
-        </section>
-
-        <section class="section" id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p>Phone: 613-927-6815</p>
-                <p>Email: sales@euclasetile.com</p>
+                <p>Our dedicated customer support team is here to assist you with any questions or concerns. We are committed to providing exceptional service and ensuring your satisfaction with every purchase.</p>
             </div>
         </section>
     </div>
